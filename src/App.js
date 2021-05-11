@@ -8,12 +8,6 @@ import axios from 'axios'
 const App = () => {
     const spotify = Credentials()
 
-    const data = [
-        {value: 1, name: 'A '},
-        {value: 2, name: 'B'},
-        {value: 3, name: 'C'}
-    ]
-
     const [token, setToken] = useState('')
     const [genres, setGenres] = useState({selectedGenre: '', listOfGenresFromAPI: []})
     const [playlist, setPlaylist] = useState({selectedPlaylist: '', listOfPlaylistFromAPI: []})
